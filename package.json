@@ -1,0 +1,16 @@
+{
+  "name": "@ibnlanre/objectify",
+  "version": "0.0.1",
+  "description": "A utility for converting a JS reference type to an object",
+  "main": "index.js",
+  "dependencies": {
+    "@ibnlanre/typeof": "0.0.2",
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ridwan Olanrewaju",
+  "license": "MIT"
+}
