@@ -1,16 +1,41 @@
 {
   "name": "@ibnlanre/objectify",
   "version": "0.0.1",
-  "description": "A utility for converting a JS reference type to an object",
+  "description": "A utility for converting JS reference types to objects",
   "main": "index.js",
-  "dependencies": {
-    "@ibnlanre/typeof": "0.0.2",
-  },
-  "devDependencies": {},
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm i -D typescript rollup @wessberg/rollup-plugin-ts rollup-plugin-terser",
+    "push": "npm publish --access public",
+    "build": "rollup -c"
   },
-  "keywords": [],
-  "author": "Ridwan Olanrewaju",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibnlanre/objectify.git"
+  },
+  "keywords": [
+    "typeof",
+    "types",
+    "type-of",
+    "check",
+    "constructor"
+  ],
+  "author": "Ridwan Olanrewaju <olaitanlanre28@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ibnlanre/objectify/issues"
+  },
+  "homepage": "https://github.com/ibnlanre/objectify#readme",
+  "devDependencies": {
+    "@wessberg/rollup-plugin-ts": "^1.3.14",
+    "rollup": "^2.45.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {}
 }
