@@ -1,20 +1,6 @@
 /*!
- * @ibnlanre/objectify-0.0.1
+ * @ibnlanre/objectify-0.0.2
  * Copyright (c) 2021 Ridwan Olanrewaju.
  * Licensed under the MIT license.
  */
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-var r=function(){return(r=Object.assign||function(r){for(var t,n=1,e=arguments.length;n<e;n++)for(var a in t=arguments[n])Object.prototype.hasOwnProperty.call(t,a)&&(r[a]=t[a]);return r}).apply(this,arguments)};function t(t){var n=Object.entries(t),e=n.length?n:Array.from(t);return(e=e.map((function(r){return Array.isArray(r)?r:[r]}))).reduce((function(t,n){var e,a=n[0],o=n[1];return r(r({},t),((e={})[a]=o,e))}),{})}export default t;
+!function(e,n){"object"==typeof exports&&"undefined"!=typeof module?module.exports=n():"function"==typeof define&&define.amd?define(n):(e="undefined"!=typeof globalThis?globalThis:e||self).objectify=n()}(this,(function(){"use strict";return function(e,n,t){for(var r={},o=0,f=Object.keys(e),i=[];o<f.length;o++)i[o]=[f[o],e[o]];for(var u=i.length?i:Array.from(e,(function(e){return Array.isArray(e)?e:[e]})),l=0;l<u.length;l++){var a=n?n.call(t,u[l],l,e):u[l],c=a[0],d=a[1];r[c]=d}return r}}));

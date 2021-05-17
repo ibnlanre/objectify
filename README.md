@@ -21,15 +21,26 @@ import objectify from "@ibnlanre/objectify"
 const objectify = require("@ibnlanre/objectify");
 ```
 
+## API
+
+```javascript
+objectify(item [, callbackFn [, thisArg]])
+```
+
 ## Usage
 
 ```javascript
 objectify(5) // {}
-objectify("help") // { 0: "h", 1: "e", 2: "l", 3: "p" }
 
-// {  0: "zero", 1: [4, 5, 6], }
-objectify(new Map([[0, "zero"], [1, [4, 5, 6]]])) 
+// callbacks should return an array
+const cb = ([value, key], index, item) => [index, value]
 
-// { 6: undefined, 8: undefined, 90: undefined, }
-objectify(new Set([6, 8, 90]))
+// { 0: 6, 1: 8, 2: 90 }
+objectify(new Set([6, 8, 90]), cb)
+
+// {  0: "zero", 1: [4, 5, 6] }
+objectify(new Map([[0, "zero"], [1, [4, 5, 6]]]))
+
+// { 0: "h", 1: "e", 2: "l", 3: "p" }
+objectify("help")
 ```

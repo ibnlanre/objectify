@@ -1,6 +1,6 @@
 {
   "name": "@ibnlanre/objectify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A utility for converting JS reference types to objects",
   "main": "index.js",
   "types": "index.d.ts",
@@ -8,10 +8,9 @@
     "index.js",
     "index.d.ts"
   ],
-  "type": "module",
   "scripts": {
-    "dev": "npm i -D typescript rollup @wessberg/rollup-plugin-ts rollup-plugin-terser",
     "push": "npm publish --access public",
+    "test": "node index.test.js",
     "build": "rollup -c"
   },
   "repository": {
@@ -19,11 +18,13 @@
     "url": "git+https://github.com/ibnlanre/objectify.git"
   },
   "keywords": [
-    "typeof",
-    "types",
-    "type-of",
-    "check",
-    "constructor"
+    "map",
+    "spread",
+    "objectify",
+    "Array.from",
+    "iterables",
+    "iterator",
+    "set"
   ],
   "author": "Ridwan Olanrewaju <olaitanlanre28@gmail.com>",
   "license": "MIT",
